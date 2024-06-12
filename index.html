@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0C0C0C;
+            color: white;
+        }
+
+        .background-img {
+            height: 300px;
+            background-image: url(./img/background_top_img.png);
+            position: relative;
+            /* para a div maior aceitar a div menor sobreposta */
+            background-size: cover;
+            /* imagem se adapta ao tamanho da div */
+            background-position: center;
+            /* centraliza a imagem */
+        }
+
+        .logo {
+            padding: 25px;
+            position: absolute;
+            /* altera a posição da div */
+            left: 25px;
+            bottom: 25px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .menu-section {
+            margin-bottom: 20px;
+        }
+
+        .menu-section h2 {
+            background-color: yellow;
+            color: black;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .menu-item .name {
+            font-weight: bold;
+        }
+
+        .menu-item .price {
+            color: yellow;
+        }
+
+        .rodape {
+            background-color: yellow;
+            border: 1px solid yellow;
+            color: black;
+            font-weight: bold;
+            border-radius: 30px;
+            align-items: center;
+            text-align: center;
+
+            width: 300px;
+        }
+
+        #rdp2 {
+            background-color: black;
+            border: 1px solid yellow;
+            color: yellow;
+            width: 300px;
+        }
+
+        .container {
+            padding: 10px;
+        }
+
+        .mae {
+            justify-content: center;
+            display: flex;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="background-img">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+        </div>
+
+        <div class="header">
+            <h1>Cardápio Digital</h1>
+        </div>
+        <div class="menu-section">
+            <h2>Lanches</h2>
+            <div class="row menu-item">
+                <div class="col-md-8 name">HOT DOG</div>
+                <div class="col-md-4 price text-right">+ 15,00</div>
+                <div class="col-12 description">2 SALSICHAS - MAIONESE CASEIRA - KETCHUP - MOSTARDA - PURÊ - BATATA
+                    PALHA - QUEIJO - ORÉGANO</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">MISTO QUENTE</div>
+                <div class="col-md-4 price text-right">+ 12,00</div>
+                <div class="col-12 description">CATUPIRY - PRESUNTO - QUEIJO - ORÉGANO</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">BAURU</div>
+                <div class="col-md-4 price text-right">+ 12,00</div>
+                <div class="col-12 description">MAIONESE CASEIRA - TOMATE - CATUPIRY - QUEIJO - ORÉGANO</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">HAMBURGUER</div>
+                <div class="col-md-4 price text-right">+ 12,00</div>
+                <div class="col-12 description">HAMBURGUER - MAIONESE CASEIRA - KETCHUP - MOSTARDA - BATATA PALHA -
+                    OPCIONAL: ALFACE/TOMATE</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">X BURGUER</div>
+                <div class="col-md-4 price text-right">+ 14,00</div>
+                <div class="col-12 description">HAMBURGUER - MAIONESE CASEIRA - KETCHUP - MOSTARDA - BATATA PALHA -
+                    QUEIJO - CATUPIRY - ORÉGANO</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">X SALADA</div>
+                <div class="col-md-4 price text-right">+ 17,00</div>
+                <div class="col-12 description">HAMBURGUER - MAIONESE CASEIRA - SALADA - KETCHUP - MOSTARDA - BATATA
+                    PALHA - QUEIJO - CATUPIRY - ORÉGANO</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">X BACON</div>
+                <div class="col-md-4 price text-right">+ 20,00</div>
+                <div class="col-12 description">HAMBURGUER - BACON - MAIONESE CASEIRA - SALADA - KETCHUP - MOSTARDA -
+                    BATATA PALHA - QUEIJO - CATUPIRY - ORÉGANO</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">X EGG</div>
+                <div class="col-md-4 price text-right">+ 18,00</div>
+                <div class="col-12 description">HAMBURGUER 90gr - OVO - MAIONESE CASEIRA - SALADA - KETCHUP - MOSTARDA -
+                    BATATA PALHA - QUEIJO - CATUPIRY - ORÉGANO</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">X EGG BACON</div>
+                <div class="col-md-4 price text-right">+ 22,00</div>
+                <div class="col-12 description">HAMBURGUER - OVO - MAIONESE CASEIRA - SALADA - KETCHUP - MOSTARDA -
+                    BATATA PALHA - QUEIJO - CATUPIRY - ORÉGANO</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">X FRANGO</div>
+                <div class="col-md-4 price text-right">+ 19,00</div>
+                <div class="col-12 description">FRANGO - MAIONESE CASEIRA - SALADA - KETCHUP - MOSTARDA - BATATA PALHA -
+                    QUEIJO - CATUPIRY - ORÉGANO</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">X FRANGO BACON</div>
+                <div class="col-md-4 price text-right">+ 23,00</div>
+                <div class="col-12 description">FRANGO - BACON - MAIONESE CASEIRA - SALADA - KETCHUP - MOSTARDA - BATATA
+                    PALHA - QUEIJO - CATUPIRY - ORÉGANO</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">X CALABRESA</div>
+                <div class="col-md-4 price text-right">+ 20,00</div>
+                <div class="col-12 description">CALABRESA - HAMBURGUER 90gr - MAIONESE CASEIRA - SALADA - KETCHUP -
+                    MOSTARDA - BATATA PALHA - QUEIJO - CATUPIRY - ORÉGANO</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">X TUDO</div>
+                <div class="col-md-4 price text-right">+ 32,00</div>
+                <div class="col-12 description">HAMBURGUER 90gr - 2 SALSICHAS - BACON - CALABRESA - OVO - FRANGO -
+                    MAIONESE CASEIRA - SALADA - KETCHUP - MOSTARDA - BATATA PALHA - QUEIJO - CATUPIRY - ORÉGANO</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">TRIPLO X BURGUER</div>
+                <div class="col-md-4 price text-right">+ 27,00</div>
+                <div class="col-12 description">3 CARNES - 3 QUEIJOS - CATUPIRY - MAIONESE CASEIRA - BATATA FRITA</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">DUPLO BURGUER</div>
+                <div class="col-md-4 price text-right">+ 28,00</div>
+                <div class="col-12 description">2 CARNES - DOBRO DE BACON - 2 QUEIJOS - MAIONESE CASEIRA - SALADA -
+                    KETCHUP - MOSTARDA - BATATA PALHA - CATUPIRY - ORÉGANO</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">X EGGÃO DUPLO</div>
+                <div class="col-md-4 price text-right">+ 28,00</div>
+                <div class="col-12 description">2 CARNES - 2 OVOS - 2 QUEIJOS - MAIONESE CASEIRA - SALADA - KETCHUP -
+                    MOSTARDA - BATATA PALHA - CATUPIRY - ORÉGANO</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">CALAFRANGOBURGUER</div>
+                <div class="col-md-4 price text-right">+ 29,00</div>
+                <div class="col-12 description">CARNE - FRANGO - CALABRESA - MAIONESE CASEIRA - SALADA - KETCHUP -
+                    MOSTARDA - BATATA PALHA - CATUPIRY - ORÉGANO</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">DOG EGG BURGUER</div>
+                <div class="col-md-4 price text-right">+ 24,00</div>
+                <div class="col-12 description">2 SALSICHAS - KETCHUP - MOSTARDA - MAIONESE CASEIRA - PURÊ - BATATA
+                    PALHA - OVO - HAMBURGUER - QUEIJO</div>
+            </div>
+        </div>
+        <div class="menu-section">
+            <h2>TURBINE SEU LANCHE</h2>
+            <div class="row menu-item">
+                <div class="col-md-8 name">HAMBURGUER 56g</div>
+                <div class="col-md-4 price text-right">+ 2,50</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">HAMBURGUER 90gr</div>
+                <div class="col-md-4 price text-right">+ 4,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">HAMBURGUER CASEIRO</div>
+                <div class="col-md-4 price text-right">+ 7,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">FRANGO</div>
+                <div class="col-md-4 price text-right">+ 4,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">CALABRESA</div>
+                <div class="col-md-4 price text-right">+ 4,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">BACON</div>
+                <div class="col-md-4 price text-right">+ 4,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">QUEIJO</div>
+                <div class="col-md-4 price text-right">+ 2,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">OVO</div>
+                <div class="col-md-4 price text-right">+ 2,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">SALSICHA</div>
+                <div class="col-md-4 price text-right">+ 2,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">CEBOLA</div>
+                <div class="col-md-4 price text-right">+ 2,00</div>
+            </div>
+        </div>
+        <div class="menu-section">
+            <h2>PORÇÕES</h2>
+            <div class="row menu-item">
+                <div class="col-md-8 name">FRITAS NUMERO 1</div>
+                <div class="col-md-4 price text-right">+ 7,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">FRITAS NUMERO 2</div>
+                <div class="col-md-4 price text-right">+ 12,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">FRITAS NUMERO 3</div>
+                <div class="col-md-4 price text-right">+ 17,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">CALABRESA</div>
+                <div class="col-md-4 price text-right">+ 20,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">ACRÉSCIMO DE BACON</div>
+                <div class="col-md-4 price text-right">+ 4,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">ACRÉSCIMO DE QUEIJO</div>
+                <div class="col-md-4 price text-right">+ 4,00</div>
+            </div>
+        </div>
+        <div class="menu-section">
+            <h2>AÇAÍ</h2>
+            <div class="row menu-item">
+                <div class="col-md-8 name">300 ML</div>
+                <div class="col-md-4 price text-right">+ 10,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">400 ML</div>
+                <div class="col-md-4 price text-right">+ 12,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">500 ML</div>
+                <div class="col-md-4 price text-right">+ 14,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">700 ML</div>
+                <div class="col-md-4 price text-right">+ 17,00</div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-md-8 name">1000 ML</div>
+                <div class="col-md-4 price text-right">+ 26,00</div>
+            </div>
+        </div>
+    </div>
+    <div class="mae">
+        <div class="row  rodape">TODOS ACOMPANHAM LEITE EM PÓ</div>
+
+    </div>
+    <div class="mae">
+        <div class="row  rodape" id="rdp2">CONSULTE DEMAIS ADICIONAIS</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
